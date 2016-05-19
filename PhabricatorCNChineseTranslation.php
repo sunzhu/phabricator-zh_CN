@@ -29,13 +29,13 @@ return array(
   '"%s" Account' => null,
 
   // src/applications/cache/spec/PhabricatorOpcodeCacheSpec.php:93
-  '"%s" Disabled' => null,
+  '"%s" Disabled' => '"%s" 已禁用',
 
   // src/applications/cache/spec/PhabricatorOpcodeCacheSpec.php:94
   '"%s" Disabled in Development' => null,
 
   // src/applications/cache/spec/PhabricatorOpcodeCacheSpec.php:73
-  '"%s" Enabled' => null,
+  '"%s" Enabled' => '"%s" 已启用',
 
   // src/applications/cache/spec/PhabricatorOpcodeCacheSpec.php:74
   '"%s" Enabled in Production' => null,
@@ -139,7 +139,7 @@ return array(
   '%d business days since \'%s\'' => null,
 
   // src/applications/releeph/field/specification/ReleephDiffChurnFieldSpecification.php:66
-  '%d comment(s)' => null,
+  '%d comment(s)' => '%d个提交',
 
   // src/applications/releeph/field/specification/ReleephDiffSizeFieldSpecification.php:54
   '%d line(s) and %d path(s) contain changes to test code:\n' => null,
@@ -198,7 +198,7 @@ return array(
   '%s (%d / %d)' => null,
 
   // src/applications/phrequent/controller/PhrequentTrackController.php:132
-  '%s (%s ago)' => null,
+  '%s (%s ago)' => '%s (%s 之前)',
 
   // src/applications/calendar/query/PhabricatorCalendarEventSearchEngine.php:373
   // src/applications/phortune/storage/PhortunePaymentMethod.php:112
@@ -208,7 +208,7 @@ return array(
   '%s (%s)' => null,
 
   // src/applications/people/storage/PhabricatorUser.php:674
-  '%s (%s) has changed your Phabricator username.' => null,
+  '%s (%s) has changed your Phabricator username.' => '%s (%s) 修改了你的Phabricator用户名.',
 
   // src/applications/ponder/phid/PonderAnswerPHIDType.php:35
   '%s (Answer %s)' => null,
@@ -217,7 +217,7 @@ return array(
   '%s (Project)' => null,
 
   // src/applications/policy/storage/PhabricatorPolicy.php:288
-  '%s (You do not have permission to view policy details.)' => null,
+  '%s (You do not have permission to view policy details.)' => '%s (你没有权限浏览策略详情.)',
 
   // src/applications/differential/customfield/DifferentialBranchField.php:37
   '%s (bookmark)' => null,
@@ -281,7 +281,7 @@ return array(
   '%s Not Found' => "%s没有找到",
 
   // src/applications/config/check/PhabricatorPathSetupCheck.php:34
-  '%s Not Set' => null,
+  '%s Not Set' => '%s 未设置',
 
   // src/applications/config/check/PhabricatorPygmentSetupCheck.php:54
   '%s Not Working' => null,
@@ -333,10 +333,10 @@ return array(
 
   // src/applications/differential/storage/DifferentialTransaction.php:336
   // src/applications/audit/storage/PhabricatorAuditTransaction.php:356
-  '%s accepted %s.' => null,
+  '%s accepted %s.' => '%s 认可了 %s.',
 
   // src/applications/audit/storage/PhabricatorAuditTransaction.php:240
-  '%s accepted this commit.' => null,
+  '%s accepted this commit.' => '%s 认可了此提交.',
 
   // src/applications/differential/constants/DifferentialAction.php:32
   '%s accepted this revision.' => null,
@@ -414,14 +414,14 @@ return array(
   '%s added %s blocking task(s): %s.' => null,
 
   // src/applications/differential/edge/DifferentialRevisionHasCommitEdgeType.php:63
-  '%s added %s commit(s) for %s: %s.' => null,
+  '%s added %s commit(s) for %s: %s.' => '%s 添加了 %s 个提交给 %s: %s.',
 
   // src/applications/maniphest/edge/ManiphestTaskHasCommitEdgeType.php:64
-  '%s added %s commit(s) to %s: %s.' => null,
+  '%s added %s commit(s) to %s: %s.' => '%s 添加了 %s 个提交到 %s: %s.',
 
   // src/applications/differential/edge/DifferentialRevisionHasCommitEdgeType.php:21
   // src/applications/maniphest/edge/ManiphestTaskHasCommitEdgeType.php:21
-  '%s added %s commit(s): %s.' => null,
+  '%s added %s commit(s): %s.' => '%s 添加了 %s 个提交: %s.',
 
   // src/applications/transactions/edges/PhabricatorObjectHasContributorEdgeType.php:64
   '%s added %s contributor(s) for %s: %s.' => null,
@@ -466,10 +466,10 @@ return array(
   '%s added %s merchant member(s): %s.' => null,
 
   // src/applications/maniphest/edge/ManiphestTaskHasMockEdgeType.php:63
-  '%s added %s mock(s) for %s: %s.' => null,
+  '%s added %s mock(s) for %s: %s.' => '%s 添加了 %s 个草图给 %s: %s.',
 
   // src/applications/maniphest/edge/ManiphestTaskHasMockEdgeType.php:21
-  '%s added %s mock(s): %s.' => null,
+  '%s added %s mock(s): %s.' => '%s 添加了 %s 个草图: %s.',
 
   // src/applications/owners/storage/PhabricatorOwnersPackageTransaction.php:90
   '%s added %s owner(s): %s.' => null,
@@ -568,54 +568,54 @@ return array(
   '%s added CCs to this revision.' => null,
 
   // src/applications/transactions/storage/PhabricatorApplicationTransaction.php:820
-  '%s added a comment to %s.' => null,
+  '%s added a comment to %s.' => '%s 添加了一条备注到 %s.',
 
   // src/applications/transactions/storage/PhabricatorApplicationTransaction.php:629
-  '%s added a comment.' => null,
+  '%s added a comment.' => '%s 添加了一条备注.',
 
   // src/applications/pholio/storage/PholioTransaction.php:270
-  '%s added an inline comment to %s.' => null,
+  '%s added an inline comment to %s.' => '%s 添加了一条内嵌备注到 %s.',
 
   // src/applications/differential/constants/DifferentialAction.php:112
-  '%s added an inline comment.' => null,
+  '%s added an inline comment.' => '%s 添加了一条内嵌备注.',
 
   // src/applications/audit/storage/PhabricatorAuditTransaction.php:347
-  '%s added auditors to %s...' => null,
+  '%s added auditors to %s...' => '%s 添加了审核人到 %s...',
 
   // src/applications/audit/storage/PhabricatorAuditTransaction.php:335
-  '%s added auditors to %s: %s.' => null,
+  '%s added auditors to %s: %s.' => '%s 添加了审核人到 %s: %s.',
 
   // src/applications/audit/storage/PhabricatorAuditTransaction.php:232
-  '%s added auditors...' => null,
+  '%s added auditors...' => '%s 添加了审核人...',
 
   // src/applications/audit/storage/PhabricatorAuditTransaction.php:222
-  '%s added auditors: %s.' => null,
+  '%s added auditors: %s.' => '%s 添加了审核人: %s.',
 
   // src/applications/differential/storage/DifferentialTransaction.php:324
   // src/applications/audit/storage/PhabricatorAuditTransaction.php:321
-  '%s added inline comments to %s.' => null,
+  '%s added inline comments to %s.' => '%s 添加了内嵌备注到 %s.',
 
   // src/applications/differential/storage/DifferentialTransaction.php:217
   // src/applications/audit/storage/PhabricatorAuditTransaction.php:187
-  '%s added inline comments.' => null,
+  '%s added inline comments.' => '%s 添加了内嵌备注.',
 
   // src/applications/differential/constants/DifferentialAction.php:92
   '%s added reviewers to this revision.' => null,
 
   // src/applications/audit/storage/PhabricatorAuditTransaction.php:209
-  '%s added subscribers...' => null,
+  '%s added subscribers...' => '%s 添加了订阅者...',
 
   // src/applications/audit/storage/PhabricatorAuditTransaction.php:199
-  '%s added subscribers: %s.' => null,
+  '%s added subscribers: %s.' => '%s 添加了订阅者: %s.',
 
   // src/applications/almanac/storage/AlmanacDeviceTransaction.php:75
   '%s added the interface %s to this device.' => null,
 
   // src/applications/daemon/controller/PhabricatorDaemonLogViewController.php:168
-  '%s ago (%s)' => null,
+  '%s ago (%s)' => '%s 之前 (%s)',
 
   // src/applications/policy/controller/PhabricatorPolicyEditController.php:178
-  '%s all other users.' => null,
+  '%s all other users.' => '%s 所有其他用户.',
 
   // src/applications/passphrase/storage/PassphraseCredentialTransaction.php:102
   '%s allowed Conduit API access to this credential.' => null,
@@ -640,7 +640,7 @@ return array(
   '%s archived this panel.' => null,
 
   // src/applications/project/storage/PhabricatorProjectTransaction.php:119
-  '%s archived this project.' => null,
+  '%s archived this project.' => '%s 归档了此项目.',
 
   // src/applications/ponder/storage/PonderQuestionTransaction.php:216
   '%s asked a question: %s' => null,
@@ -649,10 +649,10 @@ return array(
   '%s asked this question.' => null,
 
   // src/applications/maniphest/storage/ManiphestTransaction.php:751
-  '%s assigned %s to %s.' => null,
+  '%s assigned %s to %s.' => '%s 分配 %s 给了 %s.',
 
   // src/applications/maniphest/storage/ManiphestTransaction.php:505
-  '%s assigned this task to %s.' => '%s 指派任务给 %s',
+  '%s assigned this task to %s.' => '%s 将此任务分配给了 %s',
 
   // src/applications/phragment/controller/PhragmentVersionController.php:46
   '%s at version %d' => null,
@@ -661,7 +661,7 @@ return array(
   '%s attached %d file(s) of %s: %s' => null,
 
   // src/applications/maniphest/storage/ManiphestTransaction.php:549
-  '%s attached %d file(s): %s.' => null,
+  '%s attached %d file(s): %s.' => '%s 添加了 %d 个文件: %s.',
 
   // src/applications/macro/storage/PhabricatorMacroTransaction.php:177
   '%s attached audio to %s: %s.' => null,
@@ -706,7 +706,7 @@ return array(
   '%s cancelled %s.' => null,
 
   // src/applications/calendar/storage/PhabricatorCalendarEventTransaction.php:167
-  '%s cancelled this event.' => '%s取消了这个事情.',
+  '%s cancelled this event.' => '%s 取消了此事项.',
 
   // src/applications/project/storage/PhabricatorProjectTransaction.php:335
   '%s changed %s hashtag(s), added %d: %s; removed %d: %s.' => null,
@@ -721,7 +721,7 @@ return array(
   '%s changed file(s) for %s, attached %d: %s; detached %d: %s' => null,
 
   // src/applications/maniphest/storage/ManiphestTransaction.php:561
-  '%s changed file(s), attached %d: %s; detached %d: %s.' => null,
+  '%s changed file(s), attached %d: %s; detached %d: %s.' => '%s 变动了文件, 增加 %d: %s; 移除 %d: %s.',
 
   // src/applications/repository/storage/PhabricatorRepositoryTransaction.php:415
   '%s changed indexed languages from %s to %s.' => null,
@@ -733,10 +733,10 @@ return array(
   '%s changed point limit for this column from %s to %s.' => null,
 
   // src/applications/project/storage/PhabricatorProjectTransaction.php:180
-  '%s changed project hashtag(s), added %d: %s; removed %d: %s.' => null,
+  '%s changed project hashtag(s), added %d: %s; removed %d: %s.' => '%s 修改了项目标签, 增加 %d: %s; 移除 %d: %s.',
 
   // src/applications/project/storage/PhabricatorProjectTransaction.php:207
-  '%s changed project member(s), added %d: %s; removed %d: %s.' => null,
+  '%s changed project member(s), added %d: %s; removed %d: %s.' => '%s 修改了项目成员, 增加 %d: %s; 移除 %d: %s.',
 
   // src/applications/repository/storage/PhabricatorRepositoryTransaction.php:409
   '%s changed symbol sources from %s to %s.' => null,
@@ -784,10 +784,10 @@ return array(
   '%s changed the import path from "%s" to "%s".' => null,
 
   // src/applications/transactions/storage/PhabricatorApplicationTransaction.php:835
-  '%s changed the join policy for %s.' => null,
+  '%s changed the join policy for %s.' => '%s 修改了 %s 的加入策略.',
 
   // src/applications/transactions/storage/PhabricatorApplicationTransaction.php:647
-  '%s changed the join policy of this %s from "%s" to "%s".' => null,
+  '%s changed the join policy of this %s from "%s" to "%s".' => '%s 修改了此 %s 的加入策略，从 "%s" 到 "%s".',
 
   // src/applications/conpherence/storage/ConpherenceTransaction.php:175
   '%s changed the join policy of this room from "%s" to "%s".' => null,
@@ -838,7 +838,7 @@ return array(
   '%s changed the status of %s from "%s" to "%s" by committing %s.' => null,
 
   // src/applications/maniphest/storage/ManiphestTransaction.php:694
-  '%s changed the status of %s from "%s" to "%s".' => null,
+  '%s changed the status of %s from "%s" to "%s".' => '%s 修改了 %s 的状态，"%s" -> "%s".',
 
   // src/applications/maniphest/storage/ManiphestTransaction.php:729
   '%s changed the status of %s, a task blocking %s, from "%s" to "%s".' => null,
@@ -850,20 +850,20 @@ return array(
   '%s changed the task status from "%s" to "%s" by committing %s.' => null,
 
   // src/applications/maniphest/storage/ManiphestTransaction.php:455
-  '%s changed the task status from "%s" to "%s".' => null,
+  '%s changed the task status from "%s" to "%s".' => '%s 修改了状态，"%s" -> "%s".',
 
   // src/applications/maniphest/storage/ManiphestTransaction.php:387
   // src/applications/phriction/storage/PhrictionTransaction.php:185
-  '%s changed the title from "%s" to "%s".' => null,
+  '%s changed the title from "%s" to "%s".' => '%s 修改了标题，"%s" -> "%s".',
 
   // src/applications/passphrase/storage/PassphraseCredentialTransaction.php:68
   '%s changed the username for this credential from "%s" to "%s".' => null,
 
   // src/applications/transactions/storage/PhabricatorApplicationTransaction.php:825
-  '%s changed the visibility for %s.' => null,
+  '%s changed the visibility for %s.' => '%s 修改了 %s 的可见策略.',
 
   // src/applications/transactions/storage/PhabricatorApplicationTransaction.php:633
-  '%s changed the visibility of this %s from "%s" to "%s".' => null,
+  '%s changed the visibility of this %s from "%s" to "%s".' => '%s 修改了此 %s 的可见策略， "%s" -> "%s".',
 
   // src/applications/conpherence/storage/ConpherenceTransaction.php:161
   '%s changed the visibility of this room from "%s" to "%s".' => null,
@@ -887,10 +887,10 @@ return array(
   '%s changed who can see the responses.' => null,
 
   // src/applications/maniphest/storage/ManiphestTransaction.php:741
-  '%s claimed %s.' => null,
+  '%s claimed %s.' => '%s 接手了 %s.',
 
   // src/applications/maniphest/storage/ManiphestTransaction.php:497
-  '%s claimed this task.' => null,
+  '%s claimed this task.' => '%s 接手了此任务.',
 
   // src/applications/policy/capability/PhabricatorPolicyCapability.php:33
   '%s class "%s" has an invalid %s property. Capability constants must be a string.' => null,
@@ -903,13 +903,13 @@ return array(
   '%s class "%s" must define a %s property.' => null,
 
   // src/applications/ponder/storage/PonderQuestionTransaction.php:247
-  '%s closed %s' => null,
+  '%s closed %s' => '%s 关闭了 %s.',
 
   // src/applications/maniphest/storage/ManiphestTransaction.php:655
   '%s closed %s as "%s" by committing %s.' => null,
 
   // src/applications/maniphest/storage/ManiphestTransaction.php:662
-  '%s closed %s as "%s".' => null,
+  '%s closed %s as "%s".' => '%s 关闭了 %s："%s".',
 
   // src/applications/maniphest/storage/ManiphestTransaction.php:642
   '%s closed %s as a duplicate by committing %s.' => null,
@@ -928,7 +928,7 @@ return array(
 
   // src/applications/differential/storage/DifferentialTransaction.php:357
   // src/applications/fund/storage/FundInitiativeTransaction.php:173
-  '%s closed %s.' => null,
+  '%s closed %s.' => '%s 关闭了 %s.',
 
   // src/applications/maniphest/storage/ManiphestTransaction.php:481
   '%s closed blocking task %s as "%s".' => null,
@@ -955,7 +955,7 @@ return array(
   '%s closed this task as "%s" by committing %s.' => null,
 
   // src/applications/maniphest/storage/ManiphestTransaction.php:427
-  '%s closed this task as "%s".' => null,
+  '%s closed this task as "%s".' => '%s 关闭了此任务： "%s".',
 
   // src/applications/maniphest/storage/ManiphestTransaction.php:410
   '%s closed this task as a duplicate by committing %s.' => null,
@@ -964,7 +964,7 @@ return array(
   '%s closed this task as a duplicate of %s.' => null,
 
   // src/applications/maniphest/storage/ManiphestTransaction.php:415
-  '%s closed this task as a duplicate.' => null,
+  '%s closed this task as a duplicate.' => '%s 因重复关闭了此任务',
 
   // src/applications/differential/storage/DifferentialTransaction.php:423
   '%s commandeered %s.' => null,
@@ -984,7 +984,7 @@ return array(
 
   // src/applications/audit/storage/PhabricatorAuditTransaction.php:179
   // src/applications/audit/storage/PhabricatorAuditTransaction.php:313
-  '%s committed %s.' => null,
+  '%s committed %s.' => '%s 提交了 %s.',
 
   // src/applications/transactions/storage/PhabricatorApplicationTransaction.php:909
   '%s completed building %s for %s.' => null,
@@ -1027,7 +1027,7 @@ return array(
   // src/applications/phriction/storage/PhrictionTransaction.php:228
   // src/applications/paste/storage/PhabricatorPasteTransaction.php:109
   // src/applications/pholio/storage/PholioTransaction.php:244
-  '%s created %s.' => null,
+  '%s created %s.' => '%s 创建了 %s.',
 
   // src/applications/dashboard/storage/PhabricatorDashboardTransaction.php:60
   '%s created dashboard %s.' => null,
@@ -1176,10 +1176,10 @@ return array(
   '%s destroyed this credential.' => null,
 
   // src/applications/maniphest/storage/ManiphestTransaction.php:807
-  '%s detached %d file(s) of %s: %s' => null,
+  '%s detached %d file(s) of %s: %s' => '%s 移除了 %d 个文件从 %s: %s',
 
   // src/applications/maniphest/storage/ManiphestTransaction.php:555
-  '%s detached %d file(s): %s.' => null,
+  '%s detached %d file(s): %s.' => '%s 移除了 %d 个文件: %s.',
 
   // src/applications/macro/storage/PhabricatorMacroTransaction.php:152
   '%s disabled %s.' => '%s禁用了%s',
@@ -1455,7 +1455,7 @@ return array(
   '%s edited task(s), added %s: %s; removed %s: %s.' => null,
 
   // src/applications/phriction/storage/PhrictionTransaction.php:242
-  '%s edited the content of %s.' => null,
+  '%s edited the content of %s.' => '%s 修改了内容 %s.',
 
   // src/applications/paste/storage/PhabricatorPasteTransaction.php:77
   '%s edited the content of this paste.' => null,
@@ -5676,18 +5676,18 @@ return array(
   'Author PHID: %s' => null,
 
   // src/applications/herald/adapter/HeraldAdapter.php:384
-  'Author\'s projects' => null,
+  'Author\'s projects' => '创建者的项目',
 
   // src/applications/diffusion/view/DiffusionHistoryTableView.php:214
   // src/applications/diffusion/view/DiffusionBrowseTableView.php:113
-  'Author/Committer' => null,
+  'Author/Committer' => '创建者/提交者',
 
   // src/applications/slowvote/query/PhabricatorSlowvoteSearchEngine.php:164
   // src/applications/differential/view/DifferentialRevisionListView.php:150
   // src/applications/uiexample/examples/PHUIObjectItemListExample.php:142
   // src/applications/audit/view/PhabricatorAuditListView.php:164
   // src/applications/paste/query/PhabricatorPasteSearchEngine.php:149
-  'Author: %s' => null,
+  'Author: %s' => '创建者: %s',
 
   // src/applications/slowvote/query/PhabricatorSlowvoteSearchEngine.php:95
   // src/applications/differential/query/DifferentialRevisionSearchEngine.php:215
@@ -13489,7 +13489,7 @@ return array(
   // src/applications/uiexample/examples/PHUIInfoPanelExample.php:96
   // src/applications/maniphest/config/PhabricatorManiphestConfigOptions.php:38
   // src/applications/maniphest/config/PhabricatorManiphestConfigOptions.php:39
-  'High' => null,
+  'High' => '高',
 
   // src/applications/nuance/application/PhabricatorNuanceApplication.php:35
   'High-Volume Task Queues' => null,
@@ -15615,7 +15615,7 @@ return array(
   // src/applications/uiexample/examples/PHUIInfoPanelExample.php:68
   // src/applications/maniphest/config/PhabricatorManiphestConfigOptions.php:50
   // src/applications/maniphest/config/PhabricatorManiphestConfigOptions.php:51
-  'Low' => null,
+  'Low' => '低',
 
   // src/applications/phlux/controller/PhluxEditController.php:125
   'Lowercase letters, digits, dot and hyphen only.' => null,
@@ -17766,7 +17766,7 @@ return array(
   // src/applications/uiexample/examples/PHUIObjectItemListExample.php:280
   // src/applications/maniphest/config/PhabricatorManiphestConfigOptions.php:44
   // src/applications/maniphest/config/PhabricatorManiphestConfigOptions.php:45
-  'Normal' => null,
+  'Normal' => '一般',
 
   // src/applications/uiexample/examples/PHUITypeaheadExample.php:18
   'Normal Object' => null,
@@ -30946,7 +30946,7 @@ return array(
   // src/applications/uiexample/examples/PHUIInfoPanelExample.php:69
   // src/applications/uiexample/examples/PHUIInfoPanelExample.php:79
   // src/applications/maniphest/config/PhabricatorManiphestConfigOptions.php:56
-  'Wishlist' => null,
+  'Wishlist' => '规划',
 
   // src/applications/settings/panel/PhabricatorEmailFormatSettingsPanel.php:200
   'With **Vary Subjects** enabled, most mail subject lines will include a brief description of their content, like **[Closed]** for a notification about someone closing a task.\n\n| Setting              | Example Mail Subject\n|----------------------|----------------\n| Vary Subjects        | `[Maniphest] [Closed] T123: Example Task`\n| Do Not Vary Subjects | `[Maniphest] T123: Example Task`\n\nThis can make mail more useful, but some clients have difficulty threading these messages. Disabling this option may improve threading, at the cost of less useful subject lines.' => null,
@@ -32454,13 +32454,13 @@ return array(
   '`%s` may only be called on host artifacts.' => null,
 
   // src/applications/audit/constants/PhabricatorAuditActionConstants.php:38
-  'accepted' => null,
+  'accepted' => '认可',
 
   // src/applications/audit/constants/PhabricatorAuditActionConstants.php:41
-  'added CCs to' => null,
+  'added CCs to' => '添加了抄送到',
 
   // src/applications/audit/constants/PhabricatorAuditActionConstants.php:42
-  'added auditors to' => null,
+  'added auditors to' => '添加了审核人到',
 
   // src/applications/policy/rule/PhabricatorAdministratorsPolicyRule.php:6
   'administrators' => null,
