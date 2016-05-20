@@ -8792,7 +8792,7 @@ return array(
   'Create New...' => '创建新的...',
 
   // src/applications/herald/application/PhabricatorHeraldApplication.php:18
-  'Create Notification Rules' => null,
+  'Create Notification Rules' => '创建通知规则',
 
   // src/applications/oauthserver/controller/client/PhabricatorOAuthClientEditController.php:36
   'Create OAuth Application' => null,
@@ -10712,7 +10712,7 @@ return array(
 
   // src/applications/differential/controller/DifferentialRevisionViewController.php:572
   // src/applications/diffusion/controller/DiffusionCommitController.php:974
-  'Download Raw Diff' => null,
+  'Download Raw Diff' => '下载原始差异(Diff)',
 
   // src/applications/diffusion/controller/DiffusionBrowseFileController.php:443
   'Download Raw File' => null,
@@ -11162,7 +11162,7 @@ return array(
   // src/applications/differential/controller/DifferentialRevisionViewController.php:563
   // src/applications/pholio/controller/PholioMockViewController.php:148
   // src/applications/diffusion/controller/DiffusionCommitController.php:965
-  'Edit Maniphest Tasks' => null,
+  'Edit Maniphest Tasks' => '关联到Maniphest任务',
 
   // src/applications/project/controller/PhabricatorProjectMembersEditController.php:85
   'Edit Members' => '编辑成员',
@@ -13089,7 +13089,7 @@ return array(
   'Gestures' => null,
 
   // src/applications/project/application/PhabricatorProjectApplication.php:10
-  'Get Organized' => null,
+  'Get Organized' => '组织',
 
   // src/applications/phragment/controller/PhragmentVersionController.php:113
   // src/applications/phragment/controller/PhragmentVersionController.php:124
@@ -13579,7 +13579,7 @@ return array(
   'Host Repository on Phabricator' => null,
 
   // src/applications/diffusion/application/PhabricatorDiffusionApplication.php:10
-  'Host and Browse Repositories' => null,
+  'Host and Browse Repositories' => '代码仓库服务',
 
   // src/applications/config/option/PhabricatorPHPMailerConfigOptions.php:36
   'Host for SMTP.' => null,
@@ -17743,7 +17743,7 @@ return array(
   // src/applications/diffusion/controller/DiffusionCommitTagsController.php:58
   // src/applications/diffusion/controller/DiffusionRepositoryEditMainController.php:292
   // src/applications/diffusion/controller/DiffusionCommitBranchesController.php:42
-  'None' => null,
+  'None' => '无',
 
   // src/applications/lipsum/management/PhabricatorLipsumGenerateWorkflow.php:59
   'None of the input types were supported.' => null,
@@ -18702,7 +18702,7 @@ return array(
   'Overwrite Changes' => null,
 
   // src/applications/owners/application/PhabricatorOwnersApplication.php:18
-  'Own Source Code' => null,
+  'Own Source Code' => '源代码属主',
 
   // src/applications/owners/query/PhabricatorOwnersPackageSearchEngine.php:84
   'Owned' => null,
@@ -19594,13 +19594,13 @@ return array(
 
   // src/applications/pholio/application/PhabricatorPholioApplication.php:64
   // src/applications/pholio/phid/PholioMockPHIDType.php:8
-  'Pholio Mock' => null,
+  'Pholio Mock' => 'Pholio 草图',
 
   // src/applications/maniphest/controller/ManiphestTaskDetailController.php:491
   // src/applications/herald/adapter/HeraldPholioMockAdapter.php:32
   // src/applications/pholio/query/PholioMockSearchEngine.php:6
   // src/applications/pholio/editor/PholioMockEditor.php:12
-  'Pholio Mocks' => null,
+  'Pholio Mocks' => 'Pholio 草图',
 
   // src/applications/phortune/application/PhabricatorPhortuneApplication.php:6
   // src/applications/phortune/controller/PhortuneProviderActionController.php:50
@@ -23535,7 +23535,7 @@ return array(
   'Shades' => null,
 
   // src/applications/paste/application/PhabricatorPasteApplication.php:26
-  'Share Text Snippets' => null,
+  'Share Text Snippets' => '分享文字片段',
 
   // src/applications/config/option/PhabricatorCoreConfigOptions.php:136
   'Shenanigans' => null,
@@ -29598,7 +29598,7 @@ return array(
 
   // src/applications/calendar/application/PhabricatorCalendarApplication.php:10
   // src/applications/calendar/query/PhabricatorCalendarEventSearchEngine.php:252
-  'Upcoming Events' => null,
+  'Upcoming Events' => '计划事项',
 
   // src/applications/daemon/controller/PhabricatorDaemonConsoleController.php:202
   'Upcoming Triggers' => null,
@@ -32816,6 +32816,10 @@ return array(
   '%s changed the visibility from "%s" to "%s".' => '%s 修改了浏览权限："%s" --> "%s".',
   '%s changed the edit policy from "%s" to "%s".' => '%s 修改了编辑权限："%s" --> "%s".',
   '%s moved this task to %s on the %s board.' => '%s 移动此任务到 %s（%s 工作板）.',
+  'Authored by %s.' => '由 %s 创建.',
+  'Conpherence Room' => '聊天室',
+  'Chat with Others' => '和他人聊天',
+  'Customize Menu...' => '定制菜单项...',
 
 );
 }
