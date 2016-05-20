@@ -217,7 +217,7 @@ return array(
   '%s (Project)' => null,
 
   // src/applications/policy/storage/PhabricatorPolicy.php:288
-  '%s (You do not have permission to view policy details.)' => '%s (你没有权限浏览策略详情.)',
+  '%s (You do not have permission to view policy details.)' => '%s (你没有权限浏览权限详情.)',
 
   // src/applications/differential/customfield/DifferentialBranchField.php:37
   '%s (bookmark)' => null,
@@ -568,16 +568,16 @@ return array(
   '%s added CCs to this revision.' => null,
 
   // src/applications/transactions/storage/PhabricatorApplicationTransaction.php:820
-  '%s added a comment to %s.' => '%s 添加了一条备注到 %s.',
+  '%s added a comment to %s.' => '%s 添加了一条评论到 %s.',
 
   // src/applications/transactions/storage/PhabricatorApplicationTransaction.php:629
-  '%s added a comment.' => '%s 添加了一条备注.',
+  '%s added a comment.' => '%s 添加了一条评论.',
 
   // src/applications/pholio/storage/PholioTransaction.php:270
-  '%s added an inline comment to %s.' => '%s 添加了一条内嵌备注到 %s.',
+  '%s added an inline comment to %s.' => '%s 添加了一条内嵌评论到 %s.',
 
   // src/applications/differential/constants/DifferentialAction.php:112
-  '%s added an inline comment.' => '%s 添加了一条内嵌备注.',
+  '%s added an inline comment.' => '%s 添加了一条内嵌评论.',
 
   // src/applications/audit/storage/PhabricatorAuditTransaction.php:347
   '%s added auditors to %s...' => '%s 添加了审核人到 %s...',
@@ -593,11 +593,11 @@ return array(
 
   // src/applications/differential/storage/DifferentialTransaction.php:324
   // src/applications/audit/storage/PhabricatorAuditTransaction.php:321
-  '%s added inline comments to %s.' => '%s 添加了内嵌备注到 %s.',
+  '%s added inline comments to %s.' => '%s 添加了内嵌评论到 %s.',
 
   // src/applications/differential/storage/DifferentialTransaction.php:217
   // src/applications/audit/storage/PhabricatorAuditTransaction.php:187
-  '%s added inline comments.' => '%s 添加了内嵌备注.',
+  '%s added inline comments.' => '%s 添加了内嵌评论.',
 
   // src/applications/differential/constants/DifferentialAction.php:92
   '%s added reviewers to this revision.' => null,
@@ -784,10 +784,10 @@ return array(
   '%s changed the import path from "%s" to "%s".' => null,
 
   // src/applications/transactions/storage/PhabricatorApplicationTransaction.php:835
-  '%s changed the join policy for %s.' => '%s 修改了 %s 的加入策略.',
+  '%s changed the join policy for %s.' => '%s 修改了 %s 的加入权限.',
 
   // src/applications/transactions/storage/PhabricatorApplicationTransaction.php:647
-  '%s changed the join policy of this %s from "%s" to "%s".' => '%s 修改了此 %s 的加入策略，从 "%s" 到 "%s".',
+  '%s changed the join policy of this %s from "%s" to "%s".' => '%s 修改了此 %s 的加入权限，从 "%s" 到 "%s".',
 
   // src/applications/conpherence/storage/ConpherenceTransaction.php:175
   '%s changed the join policy of this room from "%s" to "%s".' => null,
@@ -860,10 +860,10 @@ return array(
   '%s changed the username for this credential from "%s" to "%s".' => null,
 
   // src/applications/transactions/storage/PhabricatorApplicationTransaction.php:825
-  '%s changed the visibility for %s.' => '%s 修改了 %s 的可见策略.',
+  '%s changed the visibility for %s.' => '%s 修改了 %s 的浏览权限.',
 
   // src/applications/transactions/storage/PhabricatorApplicationTransaction.php:633
-  '%s changed the visibility of this %s from "%s" to "%s".' => '%s 修改了此 %s 的可见策略， "%s" -> "%s".',
+  '%s changed the visibility of this %s from "%s" to "%s".' => '%s 修改了此 %s 的浏览权限， "%s" -> "%s".',
 
   // src/applications/conpherence/storage/ConpherenceTransaction.php:161
   '%s changed the visibility of this room from "%s" to "%s".' => null,
@@ -887,10 +887,10 @@ return array(
   '%s changed who can see the responses.' => null,
 
   // src/applications/maniphest/storage/ManiphestTransaction.php:741
-  '%s claimed %s.' => '%s 接手了 %s.',
+  '%s claimed %s.' => '%s 承担了 %s.',
 
   // src/applications/maniphest/storage/ManiphestTransaction.php:497
-  '%s claimed this task.' => '%s 接手了此任务.',
+  '%s claimed this task.' => '%s 承担了此任务.',
 
   // src/applications/policy/capability/PhabricatorPolicyCapability.php:33
   '%s class "%s" has an invalid %s property. Capability constants must be a string.' => null,
@@ -1491,13 +1491,13 @@ return array(
   '%s edited the start date of this event.' => null,
 
   // src/applications/maniphest/storage/ManiphestTransaction.php:394
-  '%s edited the task description.' => null,
+  '%s edited the task description.' => '%s 修改了任务描述.',
 
   // src/applications/ponder/storage/PonderQuestionTransaction.php:221
   '%s edited the title of %s (was "%s")' => null,
 
   // src/applications/transactions/storage/PhabricatorApplicationTransaction.php:804
-  '%s edited this %s.' => null,
+  '%s edited this %s.' => '%s 修改了此 %s.',
 
   // src/applications/config/storage/PhabricatorConfigTransaction.php:49
   '%s edited this configuration entry.' => null,
@@ -1727,7 +1727,7 @@ return array(
   '%s moved this document to %s' => null,
 
   // src/applications/maniphest/storage/ManiphestTransaction.php:573
-  '%s moved this task to %s on the %s workboard.' => null,
+  '%s moved this task to %s on the %s workboard.' => '%s 移动此任务到 %s（%s 工作板）.',
 
   // src/applications/herald/query/HeraldTranscriptSearchEngine.php:128
   '%s ms' => null,
@@ -2159,13 +2159,13 @@ return array(
   '%s renamed this thread from "%s" to "%s".' => null,
 
   // src/applications/ponder/storage/PonderQuestionTransaction.php:242
-  '%s reopened %s' => null,
+  '%s reopened %s' => '%s 重新开启了 %s',
 
   // src/applications/maniphest/storage/ManiphestTransaction.php:671
   '%s reopened %s as "%s" by committing %s.' => null,
 
   // src/applications/maniphest/storage/ManiphestTransaction.php:678
-  '%s reopened %s as "%s".' => null,
+  '%s reopened %s as "%s".' => '%s 重新开启了 %s："%s".',
 
   // src/applications/maniphest/storage/ManiphestTransaction.php:715
   '%s reopened %s, a task blocking %s, as "%s".' => null,
@@ -2193,7 +2193,7 @@ return array(
   '%s reopened this task as "%s" by committing %s.' => null,
 
   // src/applications/maniphest/storage/ManiphestTransaction.php:441
-  '%s reopened this task as "%s".' => null,
+  '%s reopened this task as "%s".' => '%s 重新开启了此任务："%s".',
 
   // src/applications/pholio/storage/PholioTransaction.php:175
   '%s replaced %s with %s.' => null,
@@ -5705,7 +5705,7 @@ return array(
   'Authored Commits' => null,
 
   // src/applications/herald/query/HeraldRuleSearchEngine.php:187
-  'Authored by %s' => null,
+  'Authored by %s' => '由 %s 创建',
 
   // src/applications/oauthserver/phid/PhabricatorOAuthServerClientAuthorizationPHIDType.php:31
   'Authorization %d' => null,
@@ -5786,7 +5786,7 @@ return array(
 
   // src/applications/subscriptions/events/PhabricatorSubscriptionsUIEventListener.php:48
   // src/applications/subscriptions/controller/PhabricatorSubscriptionsEditController.php:68
-  'Automatically Subscribed' => null,
+  'Automatically Subscribed' => '自动订阅',
 
   // src/applications/config/option/PhabricatorDeveloperConfigOptions.php:106
   'Automatically profile some percentage of pages.' => null,
@@ -5828,7 +5828,7 @@ return array(
   'Award "%s" Token' => null,
 
   // src/applications/tokens/event/PhabricatorTokenUIEventListener.php:50
-  'Award Token' => null,
+  'Award Token' => '奖励图标',
 
   // src/applications/tokens/application/PhabricatorTokensApplication.php:22
   'Award and Acquire Trinkets' => null,
@@ -7729,7 +7729,7 @@ return array(
   // src/applications/auth/view/PhabricatorAuthSSHKeyTableView.php:85
   // src/applications/pholio/controller/PholioInlineController.php:162
   // src/applications/releeph/controller/request/ReleephRequestViewController.php:81
-  'Comment' => null,
+  'Comment' => '评论',
 
   // src/applications/transactions/controller/PhabricatorApplicationTransactionCommentHistoryController.php:78
   'Comment History' => null,
@@ -9254,7 +9254,7 @@ return array(
   'Custom' => '自定义',
 
   // src/applications/policy/controller/PhabricatorPolicyEditController.php:210
-  'Custom "%s" Policy' => '自定义 "%s" 策略',
+  'Custom "%s" Policy' => '自定义 "%s" 权限',
 
   // src/applications/phame/controller/blog/PhameBlogEditController.php:152
   'Custom Domain' => null,
@@ -9270,7 +9270,7 @@ return array(
 
   // src/applications/policy/storage/PhabricatorPolicy.php:126
   // src/applications/policy/controller/PhabricatorPolicyEditController.php:205
-  'Custom Policy' => '自定义策略',
+  'Custom Policy' => '自定义权限',
 
   // src/applications/project/config/PhabricatorProjectConfigOptions.php:37
   'Custom Projects fields.' => '自定义项目字段',
@@ -11014,7 +11014,7 @@ return array(
 
   // src/applications/search/controller/PhabricatorSearchAttachController.php:243
   // src/applications/maniphest/controller/ManiphestTaskDetailController.php:432
-  'Edit Blocking Tasks' => null,
+  'Edit Blocking Tasks' => '修改影响任务',
 
   // src/applications/phame/controller/blog/PhameBlogEditController.php:24
   // src/applications/phame/controller/blog/PhameBlogViewController.php:164
@@ -11086,17 +11086,17 @@ return array(
   // src/applications/project/controller/PhabricatorProjectController.php:36
   // src/applications/project/controller/PhabricatorProjectController.php:86
   // src/applications/project/controller/PhabricatorProjectProfileController.php:92
-  'Edit Details' => '修改详情',
+  'Edit Details' => '编辑详情',
 
   // src/applications/almanac/controller/AlmanacDeviceViewController.php:100
   // src/applications/almanac/controller/AlmanacDeviceEditController.php:29
   'Edit Device' => '编辑设备',
 
   // src/applications/differential/controller/DifferentialRevisionEditController.php:185
-  'Edit Differential Revision' => null,
+  'Edit Differential Revision' => '编辑Differential修订',
 
   // src/applications/differential/event/DifferentialActionMenuEventListener.php:43
-  'Edit Differential Revisions' => null,
+  'Edit Differential Revisions' => '编辑Differential修订',
 
   // src/applications/diffusion/controller/DiffusionCommitEditController.php:12
   'Edit Diffusion Commit' => null,
@@ -11108,7 +11108,7 @@ return array(
   // src/applications/phriction/controller/PhrictionDocumentController.php:285
   // src/applications/phriction/controller/PhrictionNewController.php:30
   // src/applications/phriction/controller/PhrictionEditController.php:182
-  'Edit Document' => '修改文档',
+  'Edit Document' => '编辑文档',
 
   // src/applications/diffusion/controller/DiffusionRepositoryEditEncodingController.php:59
   'Edit Encoding' => null,
@@ -11120,7 +11120,7 @@ return array(
   'Edit Existing Provider' => null,
 
   // src/applications/files/controller/PhabricatorFileInfoController.php:159
-  'Edit File' => '修改文件',
+  'Edit File' => '编辑文件',
 
   // src/applications/phragment/controller/PhragmentPolicyController.php:91
   // src/applications/phragment/controller/PhragmentPolicyController.php:105
@@ -11189,7 +11189,7 @@ return array(
 
   // src/applications/phriction/controller/PhrictionEditController.php:250
   // src/applications/phriction/controller/PhrictionMoveController.php:102
-  'Edit Notes' => '编辑备注',
+  'Edit Notes' => '编辑评论',
 
   // src/applications/oauthserver/controller/client/PhabricatorOAuthClientEditController.php:25
   'Edit OAuth Application: %s' => null,
@@ -11233,13 +11233,13 @@ return array(
   // src/applications/meta/controller/PhabricatorApplicationEditController.php:148
   // src/applications/diffusion/controller/DiffusionRepositoryCreateController.php:89
   // src/applications/diffusion/controller/DiffusionRepositoryEditMainController.php:367
-  'Edit Policies' => "修改策略",
+  'Edit Policies' => "修改权限",
 
   // src/applications/meta/controller/PhabricatorApplicationEditController.php:151
   'Edit Policies: %s' => null,
 
   // src/applications/differential/customfield/DifferentialEditPolicyField.php:11
-  'Edit Policy' => "修改策略",
+  'Edit Policy' => "修改权限",
 
   // src/applications/slowvote/controller/PhabricatorSlowvotePollController.php:103
   'Edit Poll' => null,
@@ -12628,7 +12628,7 @@ return array(
   'File Sources' => null,
 
   // src/applications/files/storage/__tests__/PhabricatorFileTestCase.php:38
-  'File Visibility' => "文件可见性",
+  'File Visibility' => "文件浏览性",
 
   // src/applications/diffusion/controller/DiffusionBrowseSearchController.php:95
   'File content matching "%s" under "%s"' => null,
@@ -12764,7 +12764,7 @@ return array(
   'Flag Color' => null,
 
   // src/applications/flag/events/PhabricatorFlagsUIEventListener.php:49
-  'Flag For Later' => null,
+  'Flag For Later' => '作标记',
 
   // src/applications/uiexample/examples/PHUIInfoPanelExample.php:113
   // src/applications/flag/query/PhabricatorFlagSearchEngine.php:76
@@ -16070,7 +16070,7 @@ return array(
   'Merge Duplicate Tasks' => null,
 
   // src/applications/maniphest/controller/ManiphestTaskDetailController.php:417
-  'Merge Duplicates In' => null,
+  'Merge Duplicates In' => '合并重复任务',
 
   // src/applications/files/management/PhabricatorFilesManagementCompactWorkflow.php:11
   'Merge identical files to share the same storage. In some cases, this can repair files with missing data.' => null,
@@ -22940,10 +22940,10 @@ return array(
   'Save Paths' => null,
 
   // src/applications/meta/controller/PhabricatorApplicationEditController.php:143
-  'Save Policies' => "保存策略",
+  'Save Policies' => "保存权限",
 
   // src/applications/policy/controller/PhabricatorPolicyEditController.php:218
-  'Save Policy' => "保存策略",
+  'Save Policy' => "保存权限",
 
   // src/applications/settings/panel/PhabricatorEmailFormatSettingsPanel.php:221
   // src/applications/settings/panel/PhabricatorEmailPreferencesSettingsPanel.php:178
@@ -24622,7 +24622,7 @@ return array(
 
   // src/applications/phrequent/controller/PhrequentTrackController.php:29
   // src/applications/phrequent/event/PhrequentUIEventListener.php:45
-  'Start Tracking Time' => null,
+  'Start Tracking Time' => '开始计时',
 
   // src/applications/daemon/management/PhabricatorDaemonManagementDebugWorkflow.php:16
   'Start __daemon__ in the foreground and print large volumes of diagnostic information to the console.' => null,
@@ -25231,13 +25231,13 @@ return array(
   'TABLE SCAN!' => null,
 
   // src/applications/repository/customfield/PhabricatorCommitTagsField.php:43
-  'TAGS' => null,
+  'TAGS' => '标签',
 
   // src/applications/maniphest/editor/ManiphestTransactionEditor.php:446
-  'TASK DESCRIPTION' => null,
+  'TASK DESCRIPTION' => '任务描述',
 
   // src/applications/maniphest/editor/ManiphestTransactionEditor.php:451
-  'TASK DETAIL' => null,
+  'TASK DETAIL' => '任务详情',
 
   // src/applications/differential/customfield/DifferentialTestPlanField.php:198
   'TEST PLAN' => null,
@@ -25303,7 +25303,7 @@ return array(
   // src/applications/diffusion/controller/DiffusionTagListController.php:90
   // src/applications/diffusion/controller/DiffusionRepositoryController.php:450
   // src/applications/diffusion/controller/DiffusionController.php:127
-  'Tags' => null,
+  'Tags' => '标签',
 
   // src/applications/diffusion/controller/DiffusionController.php:120
   'Tags for %s' => null,
@@ -30039,7 +30039,7 @@ return array(
   'User Policies' => null,
 
   // src/applications/policy/__tests__/PhabricatorPolicyTestCase.php:54
-  'User Policy' => '用户策略',
+  'User Policy' => '用户权限',
 
   // src/applications/settings/application/PhabricatorSettingsApplication.php:14
   'User Preferences' => null,
@@ -30605,7 +30605,7 @@ return array(
   'Violet' => null,
 
   // src/applications/diffusion/controller/DiffusionRepositoryEditMainController.php:390
-  'Visible To' => '可见',
+  'Visible To' => '浏览',
 
   // src/applications/phpast/application/PhabricatorPHPASTApplication.php:18
   'Visual PHP Parser' => null,
@@ -30793,7 +30793,7 @@ return array(
   'Weekly' => null,
 
   // src/applications/maniphest/controller/ManiphestTaskDetailController.php:311
-  'Weigh In' => null,
+  'Weigh In' => '参与',
 
   // src/applications/config/controller/PhabricatorConfigWelcomeController.php:13
   // src/applications/config/controller/PhabricatorConfigWelcomeController.php:18
@@ -32803,6 +32803,19 @@ return array(
 
   // src/applications/harbormaster/controller/HarbormasterBuildViewController.php:353
   '100' => null,
+  
+  // cyyun added
+  'Authored By' => '创建者',
+  'Show Older Changes' => '显示更多',
+  'Changes from before your most recent comment are hidden.' => '你最近一次评论以前的内容已隐藏.',
+  'Add Action...' => '增加操作...',
+  'Assign / Claim' => '指派/承担',
+  'Move on Workboard' => '工作板移动',
+  'Change Project Tags' => '修改项目标签',
+  'Change Subscribers' => '修改订阅者',
+  '%s changed the visibility from "%s" to "%s".' => '%s 修改了浏览权限："%s" --> "%s".',
+  '%s changed the edit policy from "%s" to "%s".' => '%s 修改了编辑权限："%s" --> "%s".',
+  '%s moved this task to %s on the %s board.' => '%s 移动此任务到 %s（%s 工作板）.',
 
 );
 }
