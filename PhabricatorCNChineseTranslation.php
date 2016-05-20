@@ -2078,7 +2078,7 @@ return array(
   // src/applications/macro/storage/PhabricatorMacroTransaction.php:144
   // src/applications/phriction/storage/PhrictionTransaction.php:234
   // src/applications/pholio/storage/PholioTransaction.php:249
-  '%s renamed %s from "%s" to "%s".' => '%s 重命名了 %s， "%s" --> "%s".',
+  '%s renamed %s from "%s" to "%s".' => '%s 重命名了 %s， "%s" -> "%s".',
 
   // src/applications/fund/storage/FundInitiativeTransaction.php:154
   '%s renamed %s.' => null,
@@ -5973,7 +5973,7 @@ return array(
   'Basic List' => null,
 
   // src/applications/policy/constants/PhabricatorPolicyType.php:25
-  'Basic Policies' => null,
+  'Basic Policies' => '基本策略',
 
   // src/applications/uiexample/examples/PHUIFeedStoryExample.php:140
   'Basic Story' => null,
@@ -9270,7 +9270,7 @@ return array(
 
   // src/applications/policy/storage/PhabricatorPolicy.php:126
   // src/applications/policy/controller/PhabricatorPolicyEditController.php:205
-  'Custom Policy' => '自定义权限',
+  'Custom Policy' => '自定义策略',
 
   // src/applications/project/config/PhabricatorProjectConfigOptions.php:37
   'Custom Projects fields.' => '自定义项目字段',
@@ -15995,10 +15995,10 @@ return array(
   // src/applications/project/controller/PhabricatorProjectController.php:85
   // src/applications/project/controller/PhabricatorProjectMembersEditController.php:157
   // src/applications/project/controller/PhabricatorProjectProfileController.php:186
-  'Members' => "成员",
+  'Members' => '成员',
 
   // src/applications/policy/constants/PhabricatorPolicyType.php:31
-  'Members of Project...' => null,
+  'Members of Project...' => '项目成员...',
 
   // src/applications/project/storage/PhabricatorProject.php:110
   'Members of a project can always view it.' => null,
@@ -17072,7 +17072,7 @@ return array(
 
   // src/applications/policy/query/PhabricatorPolicyQuery.php:168
   // src/applications/legalpad/storage/LegalpadDocument.php:138
-  'No One' => null,
+  'No One' => '没有人',
 
   // src/applications/policy/__tests__/PhabricatorPolicyTestCase.php:84
   'No One Policy' => null,
@@ -28443,7 +28443,7 @@ return array(
 
   // src/applications/project/typeahead/PhabricatorProjectLogicalAndDatasource.php:11
   // src/applications/project/typeahead/PhabricatorProjectDatasource.php:11
-  'Type a project name...' => '输入一个项目名称...',
+  'Type a project name...' => '输入项目/标签名称...',
 
   // src/applications/diffusion/typeahead/DiffusionRepositoryDatasource.php:11
   'Type a repository name...' => null,
@@ -28473,7 +28473,7 @@ return array(
   'Type a user, project or package name...' => null,
 
   // src/applications/metamta/typeahead/PhabricatorMetaMTAMailableDatasource.php:11
-  'Type a user, project, or mailing list name...' => '输入一个用户名, 项目名, 或者邮件列表名...',
+  'Type a user, project, or mailing list name...' => '输入用户名, 项目名, 或者邮件列表名...',
 
   // src/applications/maniphest/typeahead/ManiphestAssigneeDatasource.php:11
   'Type a username or "none"...' => null,
@@ -30036,7 +30036,7 @@ return array(
   'User Mismatch' => null,
 
   // src/applications/policy/constants/PhabricatorPolicyType.php:27
-  'User Policies' => null,
+  'User Policies' => '用户策略',
 
   // src/applications/policy/__tests__/PhabricatorPolicyTestCase.php:54
   'User Policy' => '用户权限',
@@ -32813,13 +32813,17 @@ return array(
   'Move on Workboard' => '工作板移动',
   'Change Project Tags' => '修改项目标签',
   'Change Subscribers' => '修改订阅者',
-  '%s changed the visibility from "%s" to "%s".' => '%s 修改了浏览权限："%s" --> "%s".',
-  '%s changed the edit policy from "%s" to "%s".' => '%s 修改了编辑权限："%s" --> "%s".',
+  '%s changed the visibility from "%s" to "%s".' => '%s 修改了浏览权限："%s" -> "%s".',
+  '%s changed the edit policy from "%s" to "%s".' => '%s 修改了编辑权限："%s" -> "%s".',
   '%s moved this task to %s on the %s board.' => '%s 移动此任务到 %s（%s 工作板）.',
   'Authored by %s.' => '由 %s 创建.',
   'Conpherence Room' => '聊天室',
   'Chat with Others' => '和他人聊天',
   'Customize Menu...' => '定制菜单项...',
+  'Task Author' => '任务创建者',
+  'Object Policies' => '对象策略',
+  'Other Project...' => '更多项目...',
+  'Custom Policy...' => '自定义策略...',
 
 );
 }
