@@ -333,10 +333,10 @@ return array(
 
   // src/applications/differential/storage/DifferentialTransaction.php:336
   // src/applications/audit/storage/PhabricatorAuditTransaction.php:356
-  '%s accepted %s.' => '%s 认可了 %s.',
+  '%s accepted %s.' => '%s 审核了 %s.',
 
   // src/applications/audit/storage/PhabricatorAuditTransaction.php:240
-  '%s accepted this commit.' => '%s 认可了此提交.',
+  '%s accepted this commit.' => '%s 审核了此提交.',
 
   // src/applications/differential/constants/DifferentialAction.php:32
   '%s accepted this revision.' => null,
@@ -481,14 +481,14 @@ return array(
   '%s added %s panel(s): %s.' => null,
 
   // src/applications/project/edge/PhabricatorProjectMemberOfProjectEdgeType.php:64
-  '%s added %s project(s) for %s: %s.' => null,
+  '%s added %s project(s) for %s: %s.' => '%s 添加了 %s 个项目到 %s: %s.',
 
   // src/applications/project/edge/PhabricatorProjectObjectHasProjectEdgeType.php:67
-  '%s added %s project(s) to %s: %s.' => null,
+  '%s added %s project(s) to %s: %s.' => '%s 添加了 %s 个项目到 %s: %s.',
 
   // src/applications/project/edge/PhabricatorProjectMemberOfProjectEdgeType.php:22
   // src/applications/project/edge/PhabricatorProjectObjectHasProjectEdgeType.php:24
-  '%s added %s project(s): %s.' => '%s 添加了 %s 个项目: %s',
+  '%s added %s project(s): %s.' => '%s 添加了 %s 个项目: %s.',
 
   // src/applications/ponder/edge/PonderVotingUserHasQuestionEdgeType.php:64
   '%s added %s question(s) to %s: %s.' => null,
@@ -1794,10 +1794,10 @@ return array(
   '%s raised the priority of this task from "%s" to "%s".' => null,
 
   // src/applications/maniphest/storage/ManiphestTransaction.php:757
-  '%s reassigned %s from %s to %s.' => null,
+  '%s reassigned %s from %s to %s.' => '%s 将 %s 从 %s 重新指派给 %s',
 
   // src/applications/maniphest/storage/ManiphestTransaction.php:510
-  '%s reassigned this task from %s to %s.' => '%s 将此任务从 %s 指派给 %s',
+  '%s reassigned this task from %s to %s.' => '%s 将此任务从 %s 重新指派给 %s',
 
   // src/applications/differential/storage/DifferentialTransaction.php:413
   '%s reclaimed %s.' => null,
@@ -2078,7 +2078,7 @@ return array(
   // src/applications/macro/storage/PhabricatorMacroTransaction.php:144
   // src/applications/phriction/storage/PhrictionTransaction.php:234
   // src/applications/pholio/storage/PholioTransaction.php:249
-  '%s renamed %s from "%s" to "%s".' => null,
+  '%s renamed %s from "%s" to "%s".' => '%s 重命名了 %s， "%s" --> "%s".',
 
   // src/applications/fund/storage/FundInitiativeTransaction.php:154
   '%s renamed %s.' => null,
@@ -5564,21 +5564,21 @@ return array(
   'Audit User Guide' => null,
 
   // src/applications/audit/constants/PhabricatorAuditCommitStatusConstants.php:17
-  'Audited' => null,
+  'Audited' => '已审核',
 
   // src/applications/owners/controller/PhabricatorOwnersDetailController.php:174
   // src/applications/owners/controller/PhabricatorOwnersEditController.php:150
-  'Auditing' => null,
+  'Auditing' => '审核中',
 
   // src/applications/audit/editor/PhabricatorAuditEditor.php:691
-  'Auditor' => null,
+  'Auditor' => '审核人',
 
   // src/applications/differential/customfield/DifferentialAuditorsField.php:11
   // src/applications/audit/query/PhabricatorCommitSearchEngine.php:90
-  'Auditors' => null,
+  'Auditors' => '审核人',
 
   // src/applications/audit/view/PhabricatorAuditListView.php:167
-  'Auditors: %s' => null,
+  'Auditors: %s' => '审核人: %s',
 
   // src/applications/audit/editor/PhabricatorAuditEditor.php:49
   // src/applications/home/controller/PhabricatorHomeMainController.php:373
@@ -22321,7 +22321,7 @@ return array(
   'Restricted' => null,
 
   // src/applications/phid/PhabricatorObjectHandle.php:132
-  'Restricted %s' => null,
+  'Restricted %s' => '受限%s',
 
   // src/applications/harbormaster/controller/HarbormasterBuildableViewController.php:208
   'Resume' => null,
