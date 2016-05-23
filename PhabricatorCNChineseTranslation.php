@@ -5541,7 +5541,7 @@ return array(
   'Audio File' => null,
 
   // src/applications/audit/application/PhabricatorAuditApplication.php:14
-  'Audit' => null,
+  'Audit' => '审核',
 
   // src/applications/diffusion/controller/DiffusionCommitController.php:726
   'Audit Commit' => null,
@@ -5554,14 +5554,14 @@ return array(
 
   // src/applications/audit/constants/PhabricatorAuditCommitStatusConstants.php:14
   // src/applications/audit/constants/PhabricatorAuditStatusConstants.php:19
-  'Audit Required' => null,
+  'Audit Required' => '待审核',
 
   // src/applications/audit/query/PhabricatorCommitSearchEngine.php:101
   // src/applications/diffusion/events/DiffusionHovercardEventListener.php:62
-  'Audit Status' => null,
+  'Audit Status' => '审核状态',
 
   // src/applications/audit/application/PhabricatorAuditApplication.php:28
-  'Audit User Guide' => null,
+  'Audit User Guide' => '代码审核用户指南',
 
   // src/applications/audit/constants/PhabricatorAuditCommitStatusConstants.php:17
   'Audited' => '已审核',
@@ -5582,7 +5582,7 @@ return array(
 
   // src/applications/audit/editor/PhabricatorAuditEditor.php:49
   // src/applications/home/controller/PhabricatorHomeMainController.php:373
-  'Audits' => null,
+  'Audits' => '审核',
 
   // src/applications/auth/application/PhabricatorAuthApplication.php:22
   'Auth' => null,
