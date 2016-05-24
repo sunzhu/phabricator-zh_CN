@@ -1782,10 +1782,10 @@ return array(
   '%s px' => '%s 像素',
 
   // src/applications/audit/storage/PhabricatorAuditTransaction.php:361
-  '%s raised a concern with %s.' => null,
+  '%s raised a concern with %s.' => '%s 对 %s 提交提了问题.',
 
   // src/applications/audit/storage/PhabricatorAuditTransaction.php:244
-  '%s raised a concern with this commit.' => null,
+  '%s raised a concern with this commit.' => '%s 对这个提交提出了问题.',
 
   // src/applications/maniphest/storage/ManiphestTransaction.php:783
   '%s raised the priority of %s from "%s" to "%s".' => null,
@@ -3492,7 +3492,7 @@ return array(
   'Accept' => null,
 
   // src/applications/audit/constants/PhabricatorAuditActionConstants.php:19
-  'Accept Commit \342\234\224' => null,
+  'Accept Commit \342\234\224' => '审核通过 \342\234\224',
 
   // src/applications/people/controller/PhabricatorPeopleEmpowerController.php:38
   'Accept Fate' => null,
@@ -3889,7 +3889,7 @@ return array(
 
   // src/applications/audit/constants/PhabricatorAuditActionConstants.php:23
   // src/applications/diffusion/controller/DiffusionCommitController.php:697
-  'Add Auditors' => null,
+  'Add Auditors' => '增加审核人',
 
   // src/applications/settings/panel/PhabricatorMultiFactorSettingsPanel.php:121
   // src/applications/settings/panel/PhabricatorMultiFactorSettingsPanel.php:215
@@ -4050,7 +4050,7 @@ return array(
 
   // src/applications/differential/view/DifferentialAddCommentView.php:98
   // src/applications/differential/constants/DifferentialAction.php:133
-  'Add Subscribers' => null,
+  'Add Subscribers' => '增加关注人',
 
   // src/applications/calendar/controller/PhabricatorCalendarEventViewController.php:79
   'Add To Plate' => null,
@@ -20776,7 +20776,7 @@ return array(
   'Rainbow Info' => null,
 
   // src/applications/audit/constants/PhabricatorAuditActionConstants.php:18
-  'Raise Concern \342\234\230' => null,
+  'Raise Concern \342\234\230' => '提出问题 \342\234\230',
 
   // src/applications/audit/storage/PhabricatorAuditTransaction.php:91
   'Raised Concern' => null,
@@ -22192,7 +22192,7 @@ return array(
   'Resign as Reviewer' => null,
 
   // src/applications/audit/constants/PhabricatorAuditActionConstants.php:20
-  'Resign from Audit' => null,
+  'Resign from Audit' => '退出审核',
 
   // src/applications/differential/command/DifferentialActionEmailCommand.php:85
   'Resign from a revision.' => null,
